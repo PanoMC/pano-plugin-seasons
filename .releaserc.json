@@ -1,0 +1,56 @@
+{
+  "branches": [
+    {
+      "name": "dev",
+      "prerelease": true
+    },
+    "main"
+  ],
+  "plugins": [
+    "@semantic-release/commit-analyzer",
+    "@semantic-release/release-notes-generator",
+    [
+      "@semantic-release/github",
+      {
+        "assets": [
+          {
+            "path": "build/libs/*.jar",
+            "label": false
+          },
+          {
+            "path": "LICENSE",
+            "label": false
+          }
+        ]
+      }
+    ],
+    [
+      "@PanoMC/semantic-release-pano",
+      {
+        "file": "build/libs/pano-plugin-seasons-${version}.jar",
+        "panoVersion": "1.0.0",
+        "useGitHubLink": true,
+        "repositoryUrl": "https://github.com/PanoMC/pano-plugin-seasons.git",
+        "configs": [
+          {
+            "resourceId": "pano-plugin-seasons",
+            "panoUrl": "https://api-dev.panomc.com",
+            "tokenVar": "PANO_TOKEN",
+            "branches": [
+              "dev"
+            ]
+          },
+          {
+            "resourceId": "pano-plugin-seasons",
+            "panoUrl": "https://api.panomc.com",
+            "tokenVar": "PANO_PROD_TOKEN",
+            "branches": [
+              "main"
+            ]
+          }
+        ]
+      }
+    ]
+  ],
+  "repositoryUrl": "https://github.com/PanoMC/pano-plugin-seasons.git"
+}

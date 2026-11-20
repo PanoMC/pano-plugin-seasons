@@ -1,0 +1,347 @@
+{
+  "settings": {
+    "sections": {
+      "general": "General",
+      "weather": "Weather",
+      "snow": "Snow on the page",
+      "play": "Play in the snow",
+      "visitors": "Visitors",
+      "look": "Look and access"
+    },
+    "fields": {
+      "enabled": {
+        "title": "Show Seasons",
+        "desc": "Turns every effect on the site on or off."
+      },
+      "schedule": {
+        "title": "When",
+        "desc": "Always, only in winter (15 November – 31 January) or between two dates."
+      },
+      "startDate": {
+        "title": "From",
+        "desc": "Month and day, e.g. 12-01."
+      },
+      "endDate": {
+        "title": "Until",
+        "desc": "Month and day, e.g. 01-15. May be in the next year."
+      },
+      "excludedPaths": {
+        "title": "Pages without effects",
+        "desc": "One path per line; a page and everything under it. Use * as a wildcard, e.g. /store/* or */checkout."
+      },
+      "source": {
+        "title": "Weather source",
+        "desc": "Pick one weather, follow the weather outside, change it at random every 3 hours or follow the season."
+      },
+      "weather": {
+        "title": "Weather",
+        "desc": "The effect that shows on the site."
+      },
+      "randomPool": {
+        "title": "Weathers to pick from",
+        "desc": "Random weather picks only from these."
+      },
+      "city": {
+        "title": "City",
+        "desc": "The weather outside comes from this city; its hemisphere sets the seasons."
+      },
+      "heavySnow": {
+        "title": "Heavy snow",
+        "desc": "A full blizzard instead of gentle flurries."
+      },
+      "lightning": {
+        "title": "Thunderstorm",
+        "desc": "Rain comes with lightning."
+      },
+      "wind": {
+        "title": "Wind",
+        "desc": "Blows everything that falls to one side."
+      },
+      "density": {
+        "title": "Amount",
+        "desc": "How much falls at once."
+      },
+      "speed": {
+        "title": "Speed",
+        "desc": "How fast it falls."
+      },
+      "settle": {
+        "title": "Snow settles on the page",
+        "desc": "Snow piles up on cards, the menu bar and the footer."
+      },
+      "groundSnow": {
+        "title": "Snow at the bottom",
+        "desc": "Snow piles up along the bottom edge of the window."
+      },
+      "pileSpeed": {
+        "title": "Pile up speed",
+        "desc": "How fast the snow piles up."
+      },
+      "surfaces": {
+        "title": "Extra snowy elements",
+        "desc": "CSS selector of more elements snow settles on."
+      },
+      "excludeSurfaces": {
+        "title": "Snow-free elements",
+        "desc": "CSS selector of elements snow never settles on. data-no-snow works too."
+      },
+      "snowballs": {
+        "title": "Snowballs",
+        "desc": "Visitors roll snowballs through deep snow, grab and throw them."
+      },
+      "snowmen": {
+        "title": "Snowmen",
+        "desc": "Three stacked snowballs become a snowman."
+      },
+      "dressUp": {
+        "title": "Dress up snowmen",
+        "desc": "Hats, scarves, faces and more for every snowman."
+      },
+      "trees": {
+        "title": "Christmas trees",
+        "desc": "Visitors plant and decorate trees."
+      },
+      "decorations": {
+        "title": "Decorations",
+        "desc": "String lights, candles, baubles and more, placed anywhere."
+      },
+      "maxPlaced": {
+        "title": "Most trees and decorations",
+        "desc": "How many of each one visitor may place."
+      },
+      "visitors": {
+        "title": "Visitors",
+        "desc": "Characters drop by while it snows."
+      },
+      "santa": {
+        "title": "Santa",
+        "desc": "Santa's sleigh flies across."
+      },
+      "snowmenFight": {
+        "title": "Grumpy snowmen",
+        "desc": "Two snowmen have a snowball fight."
+      },
+      "yeti": {
+        "title": "Yeti",
+        "desc": "The yeti stomps through and knocks a snowman over."
+      },
+      "plough": {
+        "title": "Snowplough",
+        "desc": "The snowplough clears the snow at the bottom."
+      },
+      "oftenVisits": {
+        "title": "Frequent visits",
+        "desc": "Visitors come twice as often."
+      },
+      "layer": {
+        "title": "Layer",
+        "desc": "The weather falls over the page or behind its content."
+      },
+      "wallpaper": {
+        "title": "Matching wallpaper",
+        "desc": "Replaces the page background with the weather's wallpaper."
+      },
+      "wallpaperDayNight": {
+        "title": "Follow the time of day",
+        "desc": "The wallpaper goes from morning to a starry night with the visitor's clock."
+      },
+      "panel": {
+        "title": "Show in the panel",
+        "desc": "The weather falls in the admin panel too."
+      },
+      "panelAmount": {
+        "title": "Amount in the panel",
+        "desc": "How much falls and piles up in the panel, compared with the site."
+      },
+      "mobile": {
+        "title": "Phones and tablets",
+        "desc": "Show the effects on touch devices too."
+      },
+      "reducedMotion": {
+        "title": "Respect reduced motion",
+        "desc": "Show nothing to visitors whose system asks for less motion."
+      },
+      "visitorControls": {
+        "title": "Visitor button",
+        "desc": "A small button lets visitors turn the weather off and plant trees or decorations."
+      }
+    },
+    "options": {
+      "schedule": {
+        "ALWAYS": "Always",
+        "WINTER": "In winter",
+        "DATES": "Between two dates"
+      },
+      "source": {
+        "MANUAL": "One weather",
+        "OUTSIDE": "The weather outside",
+        "RANDOM": "Random",
+        "SEASON": "By season"
+      },
+      "weather": {
+        "snow": "Snow",
+        "rain": "Rain",
+        "sakura": "Cherry blossom",
+        "leaves": "Autumn leaves",
+        "fireflies": "Fireflies",
+        "starfall": "Shooting stars"
+      },
+      "wind": {
+        "none": "None",
+        "gentleLeft": "Gentle, to the left",
+        "strongLeft": "Strong, to the left",
+        "gentleRight": "Gentle, to the right",
+        "strongRight": "Strong, to the right",
+        "changing": "Changing"
+      },
+      "layer": {
+        "FRONT": "Over the page",
+        "BEHIND": "Behind the content"
+      }
+    },
+    "city": {
+      "placeholder": "Search a city",
+      "search": "Search",
+      "remove": "Remove",
+      "none": "No city found.",
+      "credit": "Weather data by Open-Meteo (CC BY 4.0). Pano asks it; visitors' browsers never do."
+    }
+  },
+  "engine": {
+    "controls": {
+      "title": "Weather",
+      "pause": "Turn the weather off",
+      "resume": "Turn the weather on",
+      "plant-tree": "Plant a tree",
+      "decorate": "Decorate",
+      "clear": "Clear everything",
+      "trees-full": "That is enough trees for this page.",
+      "decor-full": "That is enough decorations for this page.",
+      "close": "Close"
+    },
+    "dress": {
+      "title": "Dress up the snowman",
+      "close": "Close",
+      "reset": "Start over",
+      "tab": {
+        "hat": "Hats",
+        "face": "Faces",
+        "arms": "Arms",
+        "outfit": "Clothes"
+      },
+      "hat": {
+        "topHat": "Top hat",
+        "bobble": "Bobble hat",
+        "crown": "Crown",
+        "cowboy": "Cowboy hat",
+        "party": "Party hat",
+        "earmuffs": "Earmuffs",
+        "viking": "Viking helmet",
+        "santa": "Santa hat"
+      },
+      "face": {
+        "classic": "Classic",
+        "happy": "Happy",
+        "wink": "Wink",
+        "cool": "Cool",
+        "surprised": "Surprised",
+        "sleepy": "Sleepy",
+        "grumpy": "Grumpy",
+        "love": "In love"
+      },
+      "arms": {
+        "sticks": "Sticks",
+        "waving": "Waving",
+        "mittens": "Mittens",
+        "broom": "Broom",
+        "candyCane": "Candy cane",
+        "cocoa": "Hot cocoa",
+        "gift": "Gift",
+        "flowers": "Flowers"
+      },
+      "outfit": {
+        "scarf": "Scarf",
+        "stripedScarf": "Striped scarf",
+        "bowTie": "Bow tie",
+        "tie": "Tie",
+        "sweater": "Sweater",
+        "puffer": "Puffer jacket",
+        "tuxedo": "Tuxedo",
+        "goldChain": "Gold chain"
+      }
+    },
+    "trees": {
+      "title": "Christmas tree",
+      "close": "Close",
+      "height": "Height",
+      "smaller": "Smaller",
+      "bigger": "Bigger",
+      "topper": {
+        "star": "Star",
+        "snowflake": "Snowflake",
+        "bow": "Bow",
+        "bell": "Bell",
+        "heart": "Heart",
+        "spire": "Spire"
+      },
+      "trims": "Trims",
+      "randomise": "Surprise me",
+      "remove": "Take down",
+      "full": "That is enough trees for this page. Take one down to plant another.",
+      "size0": "Bonsai",
+      "size1": "Shrub",
+      "size2": "Tree",
+      "size3": "Big tree",
+      "size4": "Too big",
+      "size5": "Send help",
+      "trim": {
+        "baubles": "Baubles",
+        "lights": "Lights",
+        "tinsel": "Garland",
+        "candy": "Candy canes",
+        "bells": "Bells",
+        "gingerbread": "Gingerbread",
+        "bows": "Bows",
+        "stars": "Stars"
+      },
+      "toppers": "Topper"
+    },
+    "decor": {
+      "kind": {
+        "lights": "String lights",
+        "candle": "Candle",
+        "redBauble": "Red bauble",
+        "goldBauble": "Gold bauble",
+        "star": "Star",
+        "wreath": "Wreath",
+        "stocking": "Stocking",
+        "candyCane": "Candy cane",
+        "gift": "Gift",
+        "bells": "Bells",
+        "gingerbread": "Gingerbread man",
+        "holly": "Holly",
+        "santaHat": "Santa hat",
+        "snowGlobe": "Snow globe",
+        "cocoa": "Cocoa mug",
+        "boat": "Toy boat"
+      }
+    }
+  },
+  "permissions": {
+    "MANAGE_SEASONS": {
+      "title": "Manage Seasons",
+      "description": "Can change the weather effects of the site."
+    }
+  },
+  "activity-logs": {
+    "UPDATED_SEASONS_CONFIG": "<b>{username}</b> updated the Seasons settings."
+  },
+  "generic": {
+    "save": "Save",
+    "undo": "Undo changes"
+  },
+  "toasts": {
+    "save-success": "Settings saved.",
+    "save-error": "Couldn't save the settings."
+  }
+}

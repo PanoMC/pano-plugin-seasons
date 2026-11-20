@@ -1,0 +1,21 @@
+{
+  "controllers": {},
+  "format": 1,
+  "views": {
+    "seasons:Seasons": {
+      "classes": [
+        "seasons-seasons",
+        "seasons-seasons__back",
+        "seasons-seasons__canvas"
+      ],
+      "contract": 1,
+      "hooks": [],
+      "props": {
+        "config": {
+          "required": false
+        }
+      },
+      "slots": []
+    }
+  }
+}

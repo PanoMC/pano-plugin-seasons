@@ -1,0 +1,14 @@
+{
+  "name": "pano-plugin-seasons",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "pano-plugin dev",
+    "build": "pano-plugin build",
+    "check": "pano-plugin check"
+  },
+  "devDependencies": {
+    "@panomc/plugin-kit": "1.0.0-dev.65",
+    "@panomc/sdk": "2.0.0-dev.65"
+  }
+}

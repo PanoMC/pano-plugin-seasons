@@ -1,0 +1,347 @@
+{
+  "settings": {
+    "sections": {
+      "general": "Genel",
+      "weather": "Hava",
+      "snow": "Sayfadaki kar",
+      "play": "Karda oyun",
+      "visitors": "Ziyaretçiler",
+      "look": "Görünüm ve erişim"
+    },
+    "fields": {
+      "enabled": {
+        "title": "Seasons'ı göster",
+        "desc": "Sitedeki tüm efektleri açar ya da kapatır."
+      },
+      "schedule": {
+        "title": "Ne zaman",
+        "desc": "Her zaman, yalnızca kışın (15 Kasım – 31 Ocak) ya da iki tarih arasında."
+      },
+      "startDate": {
+        "title": "Başlangıç",
+        "desc": "Ay ve gün, örn. 12-01."
+      },
+      "endDate": {
+        "title": "Bitiş",
+        "desc": "Ay ve gün, örn. 01-15. Sonraki yılda olabilir."
+      },
+      "excludedPaths": {
+        "title": "Efektsiz sayfalar",
+        "desc": "Her satıra bir yol; o sayfa ve altındaki her şey. * joker karakterdir, örn. /store/* ya da */checkout."
+      },
+      "source": {
+        "title": "Hava kaynağı",
+        "desc": "Tek bir hava seç, dışarıdaki havayı takip et, 3 saatte bir rastgele değiştir ya da mevsime uy."
+      },
+      "weather": {
+        "title": "Hava",
+        "desc": "Sitede görünen efekt."
+      },
+      "randomPool": {
+        "title": "Seçilecek havalar",
+        "desc": "Rastgele hava yalnızca bunlardan seçer."
+      },
+      "city": {
+        "title": "Şehir",
+        "desc": "Dışarıdaki hava bu şehirden gelir; yarımküresi mevsimleri belirler."
+      },
+      "heavySnow": {
+        "title": "Yoğun kar",
+        "desc": "Hafif kar yerine tam bir tipi."
+      },
+      "lightning": {
+        "title": "Fırtına",
+        "desc": "Yağmura şimşek eşlik eder."
+      },
+      "wind": {
+        "title": "Rüzgâr",
+        "desc": "Düşen her şeyi bir yana savurur."
+      },
+      "density": {
+        "title": "Miktar",
+        "desc": "Aynı anda ne kadar düştüğü."
+      },
+      "speed": {
+        "title": "Hız",
+        "desc": "Ne kadar hızlı düştüğü."
+      },
+      "settle": {
+        "title": "Kar sayfada birikir",
+        "desc": "Kar kartların, menü çubuğunun ve alt bilginin üstünde birikir."
+      },
+      "groundSnow": {
+        "title": "Altta kar",
+        "desc": "Kar pencerenin alt kenarı boyunca birikir."
+      },
+      "pileSpeed": {
+        "title": "Birikme hızı",
+        "desc": "Karın ne kadar hızlı biriktiği."
+      },
+      "surfaces": {
+        "title": "Ek karlı öğeler",
+        "desc": "Karın biriktiği ek öğelerin CSS seçicisi."
+      },
+      "excludeSurfaces": {
+        "title": "Karsız öğeler",
+        "desc": "Karın hiç birikmediği öğelerin CSS seçicisi. data-no-snow da çalışır."
+      },
+      "snowballs": {
+        "title": "Kartopları",
+        "desc": "Ziyaretçiler derin karda kartopu yuvarlar, tutar ve fırlatır."
+      },
+      "snowmen": {
+        "title": "Kardan adamlar",
+        "desc": "Üst üste üç kartopu kardan adam olur."
+      },
+      "dressUp": {
+        "title": "Kardan adam giydirme",
+        "desc": "Her kardan adama şapka, atkı, yüz ve daha fazlası."
+      },
+      "trees": {
+        "title": "Yılbaşı ağaçları",
+        "desc": "Ziyaretçiler ağaç diker ve süsler."
+      },
+      "decorations": {
+        "title": "Süsler",
+        "desc": "Işık zincirleri, mumlar, top süsler ve daha fazlası, istenen yere."
+      },
+      "maxPlaced": {
+        "title": "En fazla ağaç ve süs",
+        "desc": "Bir ziyaretçinin her birinden kaç tane koyabileceği."
+      },
+      "visitors": {
+        "title": "Ziyaretçiler",
+        "desc": "Kar yağarken karakterler uğrar."
+      },
+      "santa": {
+        "title": "Noel Baba",
+        "desc": "Noel Baba'nın kızağı geçer."
+      },
+      "snowmenFight": {
+        "title": "Huysuz kardan adamlar",
+        "desc": "İki kardan adam kartopu savaşı yapar."
+      },
+      "yeti": {
+        "title": "Yeti",
+        "desc": "Yeti gelip bir kardan adamı devirir."
+      },
+      "plough": {
+        "title": "Kar küreme aracı",
+        "desc": "Kar küreme aracı alttaki karı temizler."
+      },
+      "oftenVisits": {
+        "title": "Sık ziyaret",
+        "desc": "Ziyaretçiler iki kat sık gelir."
+      },
+      "layer": {
+        "title": "Katman",
+        "desc": "Hava sayfanın üstüne ya da içeriğin arkasına düşer."
+      },
+      "wallpaper": {
+        "title": "Uyumlu duvar kâğıdı",
+        "desc": "Sayfa arka planını havanın duvar kâğıdıyla değiştirir."
+      },
+      "wallpaperDayNight": {
+        "title": "Günün saatine uy",
+        "desc": "Duvar kâğıdı ziyaretçinin saatine göre sabahtan yıldızlı geceye geçer."
+      },
+      "panel": {
+        "title": "Panelde de göster",
+        "desc": "Hava yönetim panelinde de yağar."
+      },
+      "panelAmount": {
+        "title": "Paneldeki yoğunluk",
+        "desc": "Panelde siteye göre ne kadar yağıp biriktiği."
+      },
+      "mobile": {
+        "title": "Telefon ve tabletler",
+        "desc": "Efektleri dokunmatik cihazlarda da göster."
+      },
+      "reducedMotion": {
+        "title": "Azaltılmış hareket",
+        "desc": "Sistemi daha az hareket isteyen ziyaretçilere hiçbir şey gösterme."
+      },
+      "visitorControls": {
+        "title": "Ziyaretçi düğmesi",
+        "desc": "Küçük bir düğmeyle ziyaretçiler havayı kapatır, ağaç ve süs koyar."
+      }
+    },
+    "options": {
+      "schedule": {
+        "ALWAYS": "Her zaman",
+        "WINTER": "Kışın",
+        "DATES": "İki tarih arasında"
+      },
+      "source": {
+        "MANUAL": "Tek hava",
+        "OUTSIDE": "Dışarıdaki hava",
+        "RANDOM": "Rastgele",
+        "SEASON": "Mevsime göre"
+      },
+      "weather": {
+        "snow": "Kar",
+        "rain": "Yağmur",
+        "sakura": "Kiraz çiçeği",
+        "leaves": "Sonbahar yaprakları",
+        "fireflies": "Ateş böcekleri",
+        "starfall": "Kayan yıldızlar"
+      },
+      "wind": {
+        "none": "Yok",
+        "gentleLeft": "Hafif, sola",
+        "strongLeft": "Sert, sola",
+        "gentleRight": "Hafif, sağa",
+        "strongRight": "Sert, sağa",
+        "changing": "Değişken"
+      },
+      "layer": {
+        "FRONT": "Sayfanın üstünde",
+        "BEHIND": "İçeriğin arkasında"
+      }
+    },
+    "city": {
+      "placeholder": "Şehir ara",
+      "search": "Ara",
+      "remove": "Kaldır",
+      "none": "Şehir bulunamadı.",
+      "credit": "Hava verisi Open-Meteo'dan (CC BY 4.0). Pano sorar; ziyaretçilerin tarayıcıları asla sormaz."
+    }
+  },
+  "engine": {
+    "controls": {
+      "title": "Hava",
+      "pause": "Havayı kapat",
+      "resume": "Havayı aç",
+      "plant-tree": "Ağaç dik",
+      "decorate": "Süsle",
+      "clear": "Hepsini temizle",
+      "trees-full": "Bu sayfa için yeterince ağaç var.",
+      "decor-full": "Bu sayfa için yeterince süs var.",
+      "close": "Kapat"
+    },
+    "dress": {
+      "title": "Kardan adamı giydir",
+      "close": "Kapat",
+      "reset": "Baştan başla",
+      "tab": {
+        "hat": "Şapkalar",
+        "face": "Yüzler",
+        "arms": "Kollar",
+        "outfit": "Kıyafetler"
+      },
+      "hat": {
+        "topHat": "Silindir şapka",
+        "bobble": "Ponponlu bere",
+        "crown": "Taç",
+        "cowboy": "Kovboy şapkası",
+        "party": "Parti şapkası",
+        "earmuffs": "Kulaklık",
+        "viking": "Viking miğferi",
+        "santa": "Noel Baba şapkası"
+      },
+      "face": {
+        "classic": "Klasik",
+        "happy": "Mutlu",
+        "wink": "Göz kırpan",
+        "cool": "Havalı",
+        "surprised": "Şaşkın",
+        "sleepy": "Uykulu",
+        "grumpy": "Huysuz",
+        "love": "Âşık"
+      },
+      "arms": {
+        "sticks": "Dallar",
+        "waving": "El sallayan",
+        "mittens": "Eldivenler",
+        "broom": "Süpürge",
+        "candyCane": "Baston şeker",
+        "cocoa": "Sıcak kakao",
+        "gift": "Hediye",
+        "flowers": "Çiçekler"
+      },
+      "outfit": {
+        "scarf": "Atkı",
+        "stripedScarf": "Çizgili atkı",
+        "bowTie": "Papyon",
+        "tie": "Kravat",
+        "sweater": "Kazak",
+        "puffer": "Şişme mont",
+        "tuxedo": "Smokin",
+        "goldChain": "Altın zincir"
+      }
+    },
+    "trees": {
+      "title": "Yılbaşı ağacı",
+      "close": "Kapat",
+      "height": "Boy",
+      "smaller": "Küçült",
+      "bigger": "Büyüt",
+      "topper": {
+        "star": "Yıldız",
+        "snowflake": "Kar tanesi",
+        "bow": "Fiyonk",
+        "bell": "Çan",
+        "heart": "Kalp",
+        "spire": "Sivri tepe"
+      },
+      "trims": "Süsler",
+      "randomise": "Şaşırt beni",
+      "remove": "Kaldır",
+      "full": "Bu sayfa için yeterince ağaç var. Yenisini dikmek için birini kaldır.",
+      "size0": "Bonsai",
+      "size1": "Çalı",
+      "size2": "Ağaç",
+      "size3": "Büyük ağaç",
+      "size4": "Fazla büyük",
+      "size5": "İmdat",
+      "trim": {
+        "baubles": "Top süsler",
+        "lights": "Işıklar",
+        "tinsel": "Sim",
+        "candy": "Baston şekerler",
+        "bells": "Çanlar",
+        "gingerbread": "Zencefilli kurabiye",
+        "bows": "Fiyonklar",
+        "stars": "Yıldızlar"
+      },
+      "toppers": "Tepe süsü"
+    },
+    "decor": {
+      "kind": {
+        "lights": "Işık zinciri",
+        "candle": "Mum",
+        "redBauble": "Kırmızı top",
+        "goldBauble": "Altın top",
+        "star": "Yıldız",
+        "wreath": "Çelenk",
+        "stocking": "Çorap",
+        "candyCane": "Baston şeker",
+        "gift": "Hediye",
+        "bells": "Çanlar",
+        "gingerbread": "Zencefilli adam",
+        "holly": "Çobanpüskülü",
+        "santaHat": "Noel Baba şapkası",
+        "snowGlobe": "Kar küresi",
+        "cocoa": "Kakao kupası",
+        "boat": "Oyuncak tekne"
+      }
+    }
+  },
+  "permissions": {
+    "MANAGE_SEASONS": {
+      "title": "Seasons'ı yönet",
+      "description": "Sitenin hava efektlerini değiştirebilir."
+    }
+  },
+  "activity-logs": {
+    "UPDATED_SEASONS_CONFIG": "<b>{username}</b> Seasons ayarlarını güncelledi."
+  },
+  "generic": {
+    "save": "Kaydet",
+    "undo": "Değişiklikleri geri al"
+  },
+  "toasts": {
+    "save-success": "Ayarlar kaydedildi.",
+    "save-error": "Ayarlar kaydedilemedi."
+  }
+}
