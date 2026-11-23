@@ -8,15 +8,24 @@ import io.vertx.ext.web.client.WebClient
 
 /** Seasons for Pano: snow, rain, cherry blossom, autumn leaves, fireflies and shooting stars on the site. */
 class SeasonsPlugin : PanoPlugin() {
-    lateinit var configManager: PluginConfigManager<SeasonsConfig>
-        private set
+    private var currentConfigManager: PluginConfigManager<SeasonsConfig>? = null
+
+    val configManager: PluginConfigManager<SeasonsConfig>
+        get() = currentConfigManager ?: error("Seasons is not started")
 
     val openMeteo by lazy { OpenMeteo(applicationContext.getBean(WebClient::class.java)) }
 
     val config: SeasonsConfig get() = configManager.config
 
     override suspend fun onStart() {
-        configManager = PluginConfigManager(this, SeasonsConfig::class.java)
-        pluginBeanContext.beanFactory.registerSingleton(PluginConfigManager::class.java.name, configManager)
+        // A stop / start in the same context keeps the manager: a second one would leak its config watcher.
+        if (currentConfigManager == null) {
+            currentConfigManager = PluginConfigManager(this, SeasonsConfig::class.java)
+        }
+    }
+
+    override suspend fun onDisable() {
+        currentConfigManager?.close()
+        currentConfigManager = null
     }
 }
