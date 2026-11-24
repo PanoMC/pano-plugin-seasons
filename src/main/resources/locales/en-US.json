@@ -205,7 +205,8 @@
       "remove": "Remove",
       "none": "No city found.",
       "credit": "Weather data by Open-Meteo (CC BY 4.0). Pano asks it; visitors' browsers never do."
-    }
+    },
+    "date-placeholder": "MM-DD"
   },
   "engine": {
     "controls": {

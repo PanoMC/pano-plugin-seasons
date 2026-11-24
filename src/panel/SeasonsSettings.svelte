@@ -33,12 +33,12 @@
                       max={field.max}
                       step={field.step}
                       bind:value={config[field.key]} />
-                    <span class="badge text-bg-primary">×{Number(config[field.key]).toFixed(field.step < 0.1 ? 2 : 1)}</span>
+                    <span class="badge text-bg-primary">×{formatMultiplier(config[field.key], field.step < 0.1 ? 2 : 1, $currentLanguage)}</span>
                   </div>
                 {:else if field.type === 'number'}
                   <input class="form-control" type="number" id="seasons-{field.key}" min={field.min} max={field.max} bind:value={config[field.key]} />
                 {:else if field.type === 'date'}
-                  <input class="form-control" type="text" id="seasons-{field.key}" placeholder="MM-DD" maxlength="5" bind:value={config[field.key]} />
+                  <input class="form-control" type="text" id="seasons-{field.key}" placeholder={$_('settings.date-placeholder')} maxlength="5" bind:value={config[field.key]} />
                 {:else if field.type === 'text'}
                   <input class="form-control font-monospace" type="text" id="seasons-{field.key}" maxlength="500" placeholder={field.placeholder ?? ''} bind:value={config[field.key]} />
                 {:else if field.type === 'textarea'}
@@ -52,7 +52,7 @@
                         id="seasons-pool-{weather}"
                         checked={config.randomPool.includes(weather)}
                         onchange={(e) => togglePool(weather, e.currentTarget.checked)} />
-                      <label class="btn btn-sm btn-outline-primary text-capitalize" for="seasons-pool-{weather}">
+                      <label class="btn btn-sm btn-outline-primary" for="seasons-pool-{weather}">
                         {$_(`settings.options.weather.${weather}`)}
                       </label>
                     {/each}
@@ -64,14 +64,14 @@
                         <span class="badge text-bg-primary">
                           <i class="fa-solid fa-location-dot me-1"></i>{cityLabel(config.city)}
                         </span>
-                        <button type="button" class="btn btn-sm btn-link text-capitalize" onclick={() => (config.city = null)}>
+                        <button type="button" class="btn btn-sm btn-link" onclick={() => (config.city = null)}>
                           {$_('settings.city.remove')}
                         </button>
                       </div>
                     {/if}
                     <form class="input-group" onsubmit={searchCities}>
                       <input class="form-control" type="search" id="seasons-{field.key}" placeholder={$_('settings.city.placeholder')} bind:value={cityQuery} />
-                      <button class="btn btn-outline-primary text-capitalize" type="submit" disabled={searching || cityQuery.trim().length < 2}>
+                      <button class="btn btn-outline-primary" type="submit" disabled={searching || cityQuery.trim().length < 2}>
                         {#if searching}<span class="spinner-border spinner-border-sm"></span>{:else}{$_('settings.city.search')}{/if}
                       </button>
                     </form>
@@ -99,10 +99,10 @@
   {/each}
 
   <div class="d-flex justify-content-end gap-2 mb-3">
-    <button type="button" class="btn btn-link text-capitalize" disabled={!hasChanges || saving} onclick={reset}>
+    <button type="button" class="btn btn-link" disabled={!hasChanges || saving} onclick={reset}>
       {$_('generic.undo')}
     </button>
-    <button type="button" class="btn btn-primary text-capitalize" disabled={!hasChanges || saving} onclick={save}>
+    <button type="button" class="btn btn-primary" disabled={!hasChanges || saving} onclick={save}>
       {#if saving}<span class="spinner-border spinner-border-sm me-2"></span>{/if}
       {$_('generic.save')}
     </button>
@@ -111,12 +111,22 @@
 
 <script>
   import { api } from '@panomc/sdk/plugin-api';
+  import { currentLanguage } from '@panomc/sdk/utils/language';
   import { _, showSuccessToast, showErrorToast } from '../main.js';
   import { DEFAULTS, WEATHERS, WINDS, normalize } from '../theme/seasons/config.js';
 
   const pluginId = 'pano-plugin-seasons';
 
   let { addon } = $props();
+
+  /** The range badge in the panel's number format (1,5 in tr / ru). */
+  function formatMultiplier(value, digits, language) {
+    try {
+      return new Intl.NumberFormat(language?.code ?? 'en-US', { minimumFractionDigits: digits, maximumFractionDigits: digits }).format(Number(value));
+    } catch {
+      return Number(value).toFixed(digits);
+    }
+  }
 
   /** @type {any} */
   let config = $state(normalize(addon?.config ?? DEFAULTS));

@@ -31,7 +31,7 @@
       },
       "source": {
         "title": "Hava kaynağı",
-        "desc": "Tek bir hava seç, dışarıdaki havayı takip et, 3 saatte bir rastgele değiştir ya da mevsime uy."
+        "desc": "Tek bir hava seçin, dışarıdaki havayı izleyin, 3 saatte bir rastgele değiştirin ya da mevsime uyun."
       },
       "weather": {
         "title": "Hava",
@@ -155,11 +155,11 @@
       },
       "mobile": {
         "title": "Telefon ve tabletler",
-        "desc": "Efektleri dokunmatik cihazlarda da göster."
+        "desc": "Efektler dokunmatik cihazlarda da gösterilir."
       },
       "reducedMotion": {
         "title": "Azaltılmış hareket",
-        "desc": "Sistemi daha az hareket isteyen ziyaretçilere hiçbir şey gösterme."
+        "desc": "Sistemi daha az hareket isteyen ziyaretçilere hiçbir şey gösterilmez."
       },
       "visitorControls": {
         "title": "Ziyaretçi düğmesi",
@@ -205,7 +205,8 @@
       "remove": "Kaldır",
       "none": "Şehir bulunamadı.",
       "credit": "Hava verisi Open-Meteo'dan (CC BY 4.0). Pano sorar; ziyaretçilerin tarayıcıları asla sormaz."
-    }
+    },
+    "date-placeholder": "AA-GG"
   },
   "engine": {
     "controls": {
@@ -220,7 +221,7 @@
       "close": "Kapat"
     },
     "dress": {
-      "title": "Kardan adamı giydir",
+      "title": "Kardan adamı giydirin",
       "close": "Kapat",
       "reset": "Baştan başla",
       "tab": {
@@ -235,7 +236,7 @@
         "crown": "Taç",
         "cowboy": "Kovboy şapkası",
         "party": "Parti şapkası",
-        "earmuffs": "Kulaklık",
+        "earmuffs": "Kulak ısıtıcı",
         "viking": "Viking miğferi",
         "santa": "Noel Baba şapkası"
       },
@@ -285,9 +286,9 @@
         "spire": "Sivri tepe"
       },
       "trims": "Süsler",
-      "randomise": "Şaşırt beni",
+      "randomise": "Beni şaşırtın",
       "remove": "Kaldır",
-      "full": "Bu sayfa için yeterince ağaç var. Yenisini dikmek için birini kaldır.",
+      "full": "Bu sayfa için yeterince ağaç var. Yenisini dikmek için birini kaldırın.",
       "size0": "Bonsai",
       "size1": "Çalı",
       "size2": "Ağaç",
